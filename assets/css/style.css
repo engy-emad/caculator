@@ -1,0 +1,64 @@
+/* Import Google font - Poppins & Noto */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #091021;
+}
+
+.calculator {
+    margin-block: 3em;
+    display: grid;
+    position: relative;
+    border-radius: 10px;
+}
+
+.value {
+    grid-column: span 4;
+    height: 100px;
+    text-align: right;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+span {
+    display: grid;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    background-color: #0c2835;
+    place-items: center;
+    border: 1px solid rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+
+span :active {
+    background: #74ff3b;
+    color: #111;
+}
+
+.clear {
+    grid-column: span 2;
+    width: 120px;
+    background: #ff3077;
+}
+
+.plus {
+    grid-row: span 2;
+    height: 120px;
+}
+
+.equal {
+    background: #03b1ff;
+}
